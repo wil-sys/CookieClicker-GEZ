@@ -290,6 +290,8 @@ M.launch=function()
 			},
 			'drowsyfern':{
 				name:'Drowsyfern',
+				fungus:true,
+				weed:true,
 				icon:14,
 				cost:90,
 				costM:100000,
@@ -355,6 +357,7 @@ M.launch=function()
 			},
 			'queenbeetLump':{
 				name:'Juicy queenbeet',
+				fungus:true,
 				weed:true,
 				icon:18,
 				plantable:true,
@@ -745,7 +748,7 @@ M.launch=function()
 						else mult*=1;
 						
 						//age mult, power mult, weed mult
-						/*if (name=='elderwort') effectOn(x,y,1,[1+0.03*mult,1,1]);
+						if (name=='elderwort') effectOn(x,y,1,[1+0.03*mult,1,1]);
 						else if (name=='queenbeetLump') effectOn(x,y,1,[1,1-0.2*mult,1]);
 						else if (name=='nursetulip') effectOn(x,y,1,[1,1+0.2*mult,1]);
 						else if (name=='shriekbulb') effectOn(x,y,1,[1,1-0.05*mult,1]);
@@ -885,8 +888,8 @@ M.launch=function()
 			},
 			'fertilizer':{
 				name:'Fertilizer',
-				icon:0,
-				tick:0.0000001,
+				icon:38,
+				tick:0.0001,
 				effMult:900000000000000000,
 				weedMult:100000000000000,
 				req:69,
