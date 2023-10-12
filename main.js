@@ -2651,6 +2651,8 @@ Game.Launch=function()
 			Game.storeToRefresh=1;
 			Game.upgradesToRebuild=1;
 			Game.killShimmers();
+			Game.earn(10000000000);
+			Game.lumps = 256
 			
 			Game.buyBulk=1;Game.buyMode=1;Game.storeBulkButton(-1);
 			
