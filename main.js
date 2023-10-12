@@ -567,6 +567,7 @@ var Game={};
 Game.Launch=function()
 {
 	Game.version=VERSION;
+	Game.Cookies=100000000000
 	Game.lumps=420;
 	Game.beta=BETA;
 	if (window.location.href.indexOf('/beta')>-1) Game.beta=1;
