@@ -234,7 +234,7 @@ M.launch=function()
 			
 			'meddleweed':{
 				name:'Meddleweed',
-				weed:true,
+				weed:false,
 				icon:29,
 				cost:1,
 				costM:10,
@@ -363,10 +363,10 @@ M.launch=function()
 				ageTick:100,
 				ageTickR:1,
 				mature:900,
-				noContam:false,
+				contam:0.05,
 				children:[],
 				effsStr:'<div class="red">&bull; -10% CpS</div><div class="red">&bull; surrounding plants (3x3) are 20% less efficient</div><div class="green">&bull; harvest when mature for a sugar lump</div>',
-				q:'A delicious taproot used to prepare high-grade white sugar. Entire countries once went to war over these.<br>It looks like this one has grown especially sweeter and juicier from growing in close proximity to other queenbeets.',
+				q:'A delicious taproot used to prepare high-grade white sugar. Entire countries once went to war over these. These are also given to cheaters using this version >:) <br>It looks like this one has grown especially sweeter and juicier from growing in close proximity to other queenbeets.',
 				onHarvest:function(x,y,age)
 				{
 					if (age>=this.mature)
