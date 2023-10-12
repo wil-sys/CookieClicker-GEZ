@@ -567,6 +567,7 @@ var Game={};
 Game.Launch=function()
 {
 	Game.version=VERSION;
+	Game.lumps=420;
 	Game.beta=BETA;
 	if (window.location.href.indexOf('/beta')>-1) Game.beta=1;
 	Game.https=(location.protocol!='https:')?false:true;
